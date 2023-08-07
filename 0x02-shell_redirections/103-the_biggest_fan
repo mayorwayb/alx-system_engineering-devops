@@ -1,3 +1,2 @@
 #!/bin/bash
-LOG_FILE="logfile.tsv"
-cut -f 1 "$LOG_FILE" | sort | uniq -c | sort -nr | head -n 11
+cut -f 1 "*.tsv" | sort | uniq -c | sort -nr | head -n 11
