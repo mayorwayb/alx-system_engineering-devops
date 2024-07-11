@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Update package list and install Nginx
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# Ensure Nginx service is enabled and running
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+# Verify Nginx status
+sudo systemctl status nginx
+
+# Check listening ports to confirm Nginx is listening on port 80
+sudo netstat -tuln | grep LISTEN
+
