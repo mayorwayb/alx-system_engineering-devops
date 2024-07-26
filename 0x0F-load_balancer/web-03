@@ -1,0 +1,12 @@
+#!/bin/bash
+# Serve-01 login commands
+
+# Setting up SSH-agent
+eval $(ssh-agent)
+
+# Add the SSH key
+ssh-add ~/.ssh/school
+
+# Log into the server
+ssh ubuntu@54.236.12.61
+
